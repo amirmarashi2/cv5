@@ -8,7 +8,7 @@ export const contactDetails = {
   locationFa: 'اهواز، خوزستان (پشتیبانی حضوری در اهواز و ریموت سراسری)',
   locationEn: 'Ahvaz, Khuzestan (On-site & Nationwide Remote Support)',
   phone: '09307868818',
-  phoneFormatted: '۰۹۳۰ ۷۸۶ ۸۸۱۸',
+  phoneFormatted: '09307868818',
   phoneRaw: '09307868818',
   whatsappUrl: 'https://wa.me/989307868818?text=%D8%B3%D9%84%D8%A7%D9%85%20%D8%AC%D9%86%D8%A7%D8%A8%20%D9%85%D8%B1%D8%B9%D8%B4%DB%8C%20%D8%B2%D8%A7%D8%AF%D9%87%D8%8C%20%D8%A8%D8%B1%D8%A7%DB%8C%20%D9%85%D8%B4%D8%A7%D9%88%D8%B1%D9%87%20%D9%88%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20%D8%B4%D8%A8%DA%A9%D9%87%20%D9%BE%DB%8C%D8%A7%D9%85%20%D9%85%DB%8C%E2%80%8C%D8%AF%D9%87%D9%85.',
   telegram: '@amirmarashi',

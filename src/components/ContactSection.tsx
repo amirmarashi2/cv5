@@ -70,8 +70,10 @@ export default function ContactSection({ language }: ContactSectionProps) {
                 <span className="text-xs font-semibold text-[#064E3B] dark:text-[#A7F3D0]">
                   {t.infoTitles.phone}
                 </span>
-                <div className="text-lg font-bold text-[#06261C] dark:text-[#ECFDF5] ltr text-left">
-                  {contactDetails.phoneFormatted}
+                <div className="text-lg font-bold text-[#06261C] dark:text-[#ECFDF5] font-mono tracking-normal" dir="ltr">
+                  <a href={`tel:${contactDetails.phoneRaw}`} className="hover:text-[#064E3B] dark:hover:text-[#34D399] transition-colors">
+                    {contactDetails.phoneFormatted}
+                  </a>
                 </div>
               </div>
             </div>
