@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --font-vazir: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --bg-page-light: #FBFDFB;
     --bg-surface-light: #F0F7F3;
     --bg-card-light: #FFFFFF;
@@ -28,19 +29,32 @@
     --accent-emerald-dark: #064E3B;
     --accent-muted: #34D399;
   }
+
+  *, *::before, *::after {
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html, body {
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.015em;
+  }
+
+  button, input, optgroup, select, textarea {
+    font-family: 'Vazirmatn', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
 }
 
-/* Geometric Balance Theme Classes with Emerald 900 Palette */
+/* Natural tech tags without artificial monospace on Persian text */
 .tech-tag {
-  font-size: 11px;
+  font-size: 11.5px;
   padding: 3px 10px;
   border: 1px solid #064E3B;
-  border-radius: 2px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   color: #064E3B;
-  font-family: monospace;
+  font-family: 'Vazirmatn', sans-serif;
   font-weight: 600;
   background-color: transparent;
   transition: all 0.15s ease-in-out;
@@ -64,8 +78,8 @@
 }
 
 .service-item-geo {
-  border-inline-start: 2px solid #064E3B;
-  padding-inline-start: 12px;
+  border-inline-start: 3px solid #064E3B;
+  padding-inline-start: 14px;
   transition: all 0.15s ease-in-out;
 }
 
@@ -81,31 +95,16 @@
   border-inline-start-color: #34D399;
 }
 
-/* Geometric Grid Background */
+/* Subtle Geometric Grid Background */
 .bg-grid-geometric {
-  background-size: 28px 28px;
+  background-size: 32px 32px;
   background-image: 
-    linear-gradient(to right, rgba(6, 78, 59, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(6, 78, 59, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(6, 78, 59, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 78, 59, 0.05) 1px, transparent 1px);
 }
 
 .dark .bg-grid-geometric {
   background-image: 
-    linear-gradient(to right, rgba(16, 185, 129, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
-}
-
-/* Terminal custom scrollbar */
-.terminal-scroll::-webkit-scrollbar {
-  height: 4px;
-  width: 4px;
-}
-.terminal-scroll::-webkit-scrollbar-track {
-  background: rgba(6, 78, 59, 0.1);
-}
-.terminal-scroll::-webkit-scrollbar-thumb {
-  background: #064E3B;
-}
-.dark .terminal-scroll::-webkit-scrollbar-thumb {
-  background: #059669;
+    linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
 }
