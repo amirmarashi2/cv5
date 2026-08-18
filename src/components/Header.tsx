@@ -160,6 +160,27 @@ export default function Header({ language, onLanguageChange, theme, onThemeToggl
             </a>
           ))}
           <div className="pt-2 flex flex-col gap-2">
+            <div className="flex items-center justify-between gap-2 p-2 rounded-[2px] bg-[#F0F7F3] dark:bg-[#0A1710] border border-[#064E3B]/30 dark:border-[#059669]/30">
+              <span className="text-xs font-mono font-bold text-[#064E3B] dark:text-[#A7F3D0]">
+                {language === 'fa' ? 'حالت نمایش / تم' : 'Theme Mode'}:
+              </span>
+              <button
+                onClick={onThemeToggle}
+                className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono font-bold text-[#064E3B] dark:text-[#A7F3D0] bg-white dark:bg-[#0E2017] border border-[#064E3B]/60 dark:border-[#059669] rounded-[2px]"
+              >
+                {theme === 'dark' ? (
+                  <>
+                    <Sun className="w-3.5 h-3.5 text-amber-300" />
+                    <span>{language === 'fa' ? 'روشن (روز)' : 'Light'}</span>
+                  </>
+                ) : (
+                  <>
+                    <Moon className="w-3.5 h-3.5 text-[#064E3B]" />
+                    <span>{language === 'fa' ? 'تاریک (شب)' : 'Dark'}</span>
+                  </>
+                )}
+              </button>
+            </div>
             <a
               href={`tel:${contactDetails.phoneRaw}`}
               className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-bold text-white bg-[#064E3B] dark:bg-[#059669] rounded-[2px]"

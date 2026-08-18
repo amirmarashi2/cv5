@@ -11,6 +11,7 @@ import {
   CheckCircle,
   ArrowUpRight,
   Briefcase,
+  ShieldCheck,
 } from 'lucide-react';
 import { Language, ServiceItem } from '../types';
 import { translations } from '../data/translations';
@@ -29,6 +30,7 @@ const iconMap: Record<string, React.ReactNode> = {
   Network: <Network className="w-5 h-5" />,
   FileSpreadsheet: <FileSpreadsheet className="w-5 h-5" />,
   Headphones: <Headphones className="w-5 h-5" />,
+  ShieldCheck: <ShieldCheck className="w-5 h-5" />,
 };
 
 export default function ServicesSection({ language, onSelectServiceForInquiry }: ServicesSectionProps) {

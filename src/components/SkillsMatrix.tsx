@@ -121,8 +121,8 @@ export default function SkillsMatrix({ language }: SkillsMatrixProps) {
             <ShieldCheck className="w-4 h-4 text-[#064E3B] dark:text-[#34D399] shrink-0" />
             <span>
               {language === 'fa'
-                ? 'تمامی تنظیمات مطابق با Best Practices امنیتی شرکت‌های Cisco و MikroTik پیاده‌سازی می‌شوند.'
-                : 'All configurations follow official Cisco & MikroTik security best-practice guidelines.'}
+                ? 'تمامی تنظیمات مطابق با Best Practices امنیتی شرکت‌های Fortinet، pfSense/Netgate، Cisco و MikroTik پیاده‌سازی می‌شوند.'
+                : 'All configurations strictly follow Fortinet, pfSense/Netgate, Cisco & MikroTik security best practices.'}
             </span>
           </div>
           <span className="font-mono text-[11px] font-bold text-[#064E3B] dark:text-[#34D399]">
