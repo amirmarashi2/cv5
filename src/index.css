@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page-light: #FBFDFB;
+    --bg-surface-light: #F0F7F3;
+    --bg-card-light: #FFFFFF;
+    --border-geometric: #064E3B; /* Emerald 900 */
+    --border-light: rgba(6, 78, 59, 0.2);
+    --text-primary-light: #06261C;
+    --text-secondary-light: #2D5043;
+    --accent-emerald: #064E3B;
+    --accent-emerald-dark: #022C22;
+    --accent-muted: #6EE7B7;
+  }
+
+  .dark {
+    --bg-page-dark: #050E09;
+    --bg-surface-dark: #0A1710;
+    --bg-card-dark: #0E2017;
+    --border-geometric: #059669;
+    --border-light: rgba(16, 185, 129, 0.25);
+    --text-primary-dark: #ECFDF5;
+    --text-secondary-dark: #A7F3D0;
+    --accent-emerald: #059669;
+    --accent-emerald-dark: #064E3B;
+    --accent-muted: #34D399;
+  }
+}
+
+/* Geometric Balance Theme Classes with Emerald 900 Palette */
+.tech-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border: 1px solid #064E3B;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #064E3B;
+  font-family: monospace;
+  font-weight: 600;
+  background-color: transparent;
+  transition: all 0.15s ease-in-out;
+}
+
+.dark .tech-tag {
+  border-color: #059669;
+  color: #A7F3D0;
+  background-color: rgba(6, 78, 59, 0.25);
+}
+
+.tech-tag:hover {
+  background-color: #064E3B;
+  color: #FFFFFF;
+}
+
+.dark .tech-tag:hover {
+  background-color: #059669;
+  color: #022C22;
+  font-weight: 700;
+}
+
+.service-item-geo {
+  border-inline-start: 2px solid #064E3B;
+  padding-inline-start: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.dark .service-item-geo {
+  border-inline-start-color: #059669;
+}
+
+.service-item-geo:hover {
+  border-inline-start-color: #022C22;
+}
+
+.dark .service-item-geo:hover {
+  border-inline-start-color: #34D399;
+}
+
+/* Geometric Grid Background */
+.bg-grid-geometric {
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(6, 78, 59, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(6, 78, 59, 0.08) 1px, transparent 1px);
+}
+
+.dark .bg-grid-geometric {
+  background-image: 
+    linear-gradient(to right, rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+}
+
+/* Terminal custom scrollbar */
+.terminal-scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.terminal-scroll::-webkit-scrollbar-track {
+  background: rgba(6, 78, 59, 0.1);
+}
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #064E3B;
+}
+.dark .terminal-scroll::-webkit-scrollbar-thumb {
+  background: #059669;
+}
